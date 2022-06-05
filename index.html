@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body onload="setQuestion()">
+    <div class="wrapper">
+        <div class="main" id="quizBox">
+
+            <!-- Heading Section -->
+            <div class="header">
+                <h1 id="question">Question no 1</h1>
+            </div>
+            <!-- Heading Section End -->
+
+
+            <!-- Option Section -->
+            <div class="otpions">
+                <ul>
+                    <li onclick="check(this)" class="optionlist"></li>
+                    <li onclick="check(this)" class="optionlist"></li>
+                    <li onclick="check(this)" class="optionlist"></li>
+                    <li onclick="check(this)" class="optionlist"></li>
+                </ul>
+                <!-- Option Section End  -->
+            </div>
+            <!-- Button Section -->
+            <div class="button">
+                <span id="counter">1/7</span>
+                <button class="hide" id="nextQues" onclick="nextQuestion()">Next Question</button>
+            </div>
+            <!-- Button Section End-->
+
+        </div>
+
+        <div>
+            <h1 class="hide" id="result">RESULT : </h1>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
